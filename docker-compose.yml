@@ -1,0 +1,17 @@
+db:
+    image: tutum/mysql
+    environment:
+        - MYSQL_PASS=admin
+        - ON_CREATE_DB=api
+api:
+    build: ./TLKmAPI/
+    links:
+        - db
+    ports:
+        - "8000:8000"
+client:
+    build: ./TLKFlaskClient
+    links:
+        - api
+    ports:
+        - "5000:5000"
