@@ -1,0 +1,6 @@
+[submodule "TLKFlaskClient"]
+	path = TLKFlaskClient
+	url = https://github.com/Tebro/TLKFlaskClient
+[submodule "TLKmAPI"]
+	path = TLKmAPI
+	url = https://github.com/mrskug/TLKmAPI
